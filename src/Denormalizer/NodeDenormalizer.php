@@ -1,6 +1,6 @@
 <?php
 
-namespace FileToObject\Normalizer;
+namespace FileToObject\Denormalizer;
 
 use FileToObject\Attribute\Keyed;
 use FileToObject\Util\ReflectionCache;

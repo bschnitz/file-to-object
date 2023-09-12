@@ -1,0 +1,24 @@
+{
+    "name": "bschnitz/file-to-object",
+    "description": "Transforming File Contents to PHP Objects using the Symfony Serializer",
+    "type": "library",
+    "require": {
+        "symfony/serializer": "^6.3",
+        "symfony/yaml": "^6.3",
+        "php-di/php-di": "^7.0",
+        "fp4php/functional": "^6.0",
+        "symfony/property-access": "^6.3"
+    },
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "FileToObject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Benjamin Schnitzler",
+            "email": "benjamin.schnitzler@e.mail.de"
+        }
+    ]
+}

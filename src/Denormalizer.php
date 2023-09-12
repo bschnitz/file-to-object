@@ -2,7 +2,7 @@
 
 namespace FileToObject;
 
-use FileToObject\Normalizer\NodeDenormalizer;
+use FileToObject\Denormalizer\NodeDenormalizer;
 use FileToObject\Util\ReflectionCache;
 use Symfony\Component\PropertyInfo\Extractor\PhpDocExtractor;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
