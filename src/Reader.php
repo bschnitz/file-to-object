@@ -2,14 +2,14 @@
 
 namespace FileToObject;
 
-use DI\Container;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Yaml\Yaml;
 
 class Reader
 {
     public function __construct()
     {
-        $this->container = new Container();
+        $this->container = new ContainerBuilder();
     }
 
     public function fileToObject(string $filePath, string $rootClassPath): object
@@ -23,6 +23,5 @@ class Reader
         /** @var Denormalizer */
         $denormalizer = $this->container->get(Denormalizer::class);
         return $denormalizer->denormalize($data, $rootClassPath);
-      
     }
 }
